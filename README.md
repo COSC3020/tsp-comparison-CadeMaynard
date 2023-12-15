@@ -26,7 +26,8 @@ to this markdown file.
 
 ## Analysis
 I begun by combining both algorithms into a file and then compiling a large set of test matrices with which I would test and time them. Then I recorded the results. Below is a simple graph of how they both performed with varied input sizes. The X-axis represents the number of nodes in the input and the Y-axis represents the the runtime of the algorithms in seconds. Held-Karp is represented by red points and Local-Search is represented by blue points. For the first few input sizes their runtime is so similar that the red points can't be seen because they are behind the blue points.
-<img width="925" alt="Screenshot 2023-12-14 at 12 19 16 AM" src="https://github.com/COSC3020/tsp-comparison-CadeMaynard/assets/143521268/3800dd8a-a29f-4b26-8bdc-ab248a344b6e">
+
+<img width="912" alt="Screenshot 2023-12-14 at 9 31 12 PM" src="https://github.com/COSC3020/tsp-comparison-CadeMaynard/assets/143521268/8afc328e-9b44-43b9-986a-b9835d9acd17">
 
 The following is a table of the actual data, as my graphing software is not terribly specific:
 
@@ -46,7 +47,8 @@ The following is a table of the actual data, as my graphing software is not terr
 | 11 | 3655.105s | 0.748ms |
 
 As the graph and this table make abundantly clear, Held-Karp's runtime appears to grow nearly exponentially whereas Local-Search grows incredibly slowly and stays shorter than even a millisecond for the test values it is given here. But the plot thickens when we get to the actual quality of their outputs. This can be seen in the graph below. Again, Held-Karp is represented by the red dots and Local-Search is represented by the blue dots. The X-axis is input size once more, but the Y-axis is know the length of the path returned by the algorithm.
-<img width="188" alt="Screenshot 2023-12-14 at 1 11 11 AM" src="https://github.com/COSC3020/tsp-comparison-CadeMaynard/assets/143521268/10c22330-be83-4861-a4de-c0ccbe3cbc56">
+
+<img width="741" alt="Screenshot 2023-12-14 at 9 31 40 PM" src="https://github.com/COSC3020/tsp-comparison-CadeMaynard/assets/143521268/142e693d-41ed-43cc-bb94-6b0e4b907069">
 
 The table below details this as well:
 
